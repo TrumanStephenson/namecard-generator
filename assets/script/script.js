@@ -24,14 +24,14 @@ ctx.fillRect(0, 0, cardWidth, cardHeight);
 
 // Set the text properties
 ctx.fillStyle = textColor;
-ctx.font = '24px Robot';
+ctx.font = '24px Roboto';
 
 // Draw the name
 ctx.fillText(name, 20, 50);
 
 // Save the image as a PNG file
 const imageBuffer = canvas.toBuffer('image/png');
-const fileName = '${name.toLowerCase().replace(' ' ,'-',)}_card.png;
+const fileName = `${name.toLowerCase().replace(' ', '-')}_card.png`;
 const filePath = path.join(__dirname, 'output', fileName);
 
 require('fs').writeFileSync(filePath, imageBuffer);
