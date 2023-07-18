@@ -3,5 +3,24 @@
     "canvas": "^2.11.2",
     "faker": "^5.5.3",
     "openai": "^3.3.0"
-  }
+  },
+  "name": "namecard-generator",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "generate": "node nameCardGenerator.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TrumanStephenson/namecard-generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TrumanStephenson/namecard-generator/issues"
+  },
+  "homepage": "https://github.com/TrumanStephenson/namecard-generator#readme"
 }
