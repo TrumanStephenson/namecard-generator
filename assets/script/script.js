@@ -2,19 +2,14 @@ const inquirer = require('inquire');
 const fs = require('fs');
 
 function promptManager() {
-    inquirer
-    .prompt({
+    inquirer.prompt({
         // Prompt for manager's information
         type: 'input',
         name: 'Manager',
         // (name, employee ID, email address, and office number)
         message: 'name, employee ID, email address, and office numnber',
     })
-    .then((managerData) => {
-        // Create the manager object
-        // Add the manager to the team roster
-        // Call the function to display the menu
-    });
+    
 }
 
 function displayMenu () {
@@ -24,6 +19,7 @@ function displayMenu () {
     })
     .then((menuChoice) => {
         // Based on the choice, prompt for the corresponding team member's information
+        displayMenu
         // (engineer: name, ID, email, GitHub username)
         // (intern: name, ID, email, school)
         // (finish building the team: generate HTML and exit the application)
